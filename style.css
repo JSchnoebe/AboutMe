@@ -33,20 +33,6 @@ nav {
     background-color: rgb(44,94,141);
     height: 250px;
 }
-section p.more-styles {
-
-    background-color: red;
-}
-
-.more-styles {
-color: white;
-background-color:  #0000FF;
-}
-
-#another-style {
-    border: 5px solid #00FF00;
-}
-
 footer {
     margin-top: 15px;
 }
