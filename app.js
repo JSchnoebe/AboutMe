@@ -21,7 +21,7 @@ if(lowerCaseName === userName) {
   alert('Welcome new user to my page.');
 }
 
-let myTeam = prompt('What is my favorite team?');
+let myTeam = prompt('What is my favorite team?').toLowerCase();
 console.log(myTeam);
 
 //Validate answer is correct
@@ -32,7 +32,7 @@ if(myTeam === 'cubs') {
 }
 
 //prompt our user for input data
-let mySport = prompt('What is my favorite sport?');
+let mySport = prompt('What is my favorite sport?').toLowerCase();
 console.log(mySport);
 
 if(mySport === 'baseball') {
@@ -42,7 +42,7 @@ if(mySport === 'baseball') {
 }
 
 //prompt our user for input data
-let mySeason = prompt('What is my favorite season?');
+let mySeason = prompt('What is my favorite season?').toLowerCase();
 console.log(mySeason);
 
 if(mySeason === 'summer') {
@@ -52,7 +52,7 @@ if(mySeason === 'summer') {
 }
 
 //prompt our user for input data
-let mySteak = prompt('How do I like my steak?');
+let mySteak = prompt('How do I like my steak?').toLowerCase();
 console.log(mySteak);
 
 if(mySteak === 'medium rare') {
@@ -62,7 +62,7 @@ if(mySteak === 'medium rare') {
 }
 
 //prompt our user for input data
-let myMusic = prompt('Do I prefer country or rap music?');
+let myMusic = prompt('Do I prefer country or rap music?').toLowerCase();
 console.log(myMusic);
 
 if(myMusic === 'rap') {

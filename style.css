@@ -2,10 +2,10 @@ body {
     margin: 0 auto;
     width: 1000px;
                      /*    red  green blue  opacity */
-    background-color: rgba(27,  71,  218,  .5);
+    background-color: rgba(218, 226, 224, 0.5);
 }
 main {
-    background-color: rgb(213, 245, 166);
+    background-color: rgb(211, 214, 205);
 }
 header {
     margin-bottom: 10px;
@@ -16,15 +16,15 @@ ul li {
     background-color: rgb(85,136,212);
     border-radius: 15px;
 }
-ol li {
+#footerList li {
     display: inline;
     padding: 10px;
     background-color: rgb(85,136,212);
     border-radius: 15px;
 }
 h1 {
-    background-color: hotpink;
-    color: #f50efd;
+    background-color: rgb(44,94,141);
+    color: rgb(211, 214, 205);
     font-size: 50px;
     text-shadow:2px 2px ivory;
     margin-bottom: 20px;
@@ -35,4 +35,8 @@ nav {
 }
 footer {
     margin-top: 15px;
+}
+
+.MyTopTen {
+    color: rgb(179, 41, 41)
 }
