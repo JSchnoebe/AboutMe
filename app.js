@@ -90,6 +90,20 @@ if(myMusic === 'rap') {
     alert('Nope. But I like country music sometimes.');
     console.log('This is the users total points', userPoints);
 }
+//prompt our user for input data
+let entries = 6;
+while(entries > 0)
+    let userHolidays = prompt('What is one of my two favorite holidays?').toLowerCase();
+    console.log(userHolidays);
+
+    if(userHolidays === 'christmas' || userHolidays === 'thanksgiving') {
+        alert('You guessed it! Nice job!');
+        userPoints += 1;
+        console.log('This is the users total points', userPoints);
+    } else {
+        alert('Nope. Not quite.');
+        console.log('This is the users total points', userPoints);
+}
 
 let answer = 5;
 let chances = 4;
@@ -104,21 +118,26 @@ while(chances > 0) {
     if(userNumber === answer) {
         //Let the user know they are right
         alert('You got it!! You must be a mind reader!');
+        userPoints += 1;
         //Set chances = 0
         break;
     } else {
         //Handle whether they guessed too high or too low
         if(userNumber > answer) {
             alert('Sorry, your answer is too high. Try again.');
-        //Decrement the chances
-        chances -= 1;
-        console.log('This is the amount of user chances', chances);
+            //Decrement the chances
+            chances -= 1;
+            console.log('This is the amount of user chances', chances);
         }
         if(userNumber < answer) {
             alert('Sorry, your answer is too low. Try again.');
-        chances -= 1;
-        console.log('This is the amount of user chances', chances);
+            chances -= 1;
+            console.log('This is the amount of user chances', chances);
         }
+        
     }
-}//This closes while loop
-//alert the user of the random number
+ }//This closes while loop
+// if(chances = 0) {
+//     alert('Sorry you ran out of chances. The number was 5!');
+//     console.log('This is the amount of user chances', chances);
+// }
