@@ -26,13 +26,15 @@ if(lowerCaseName === userName) {
   alert('Welcome new user to my page.');
 }
 
+function questions() {
+
 let myTeam = prompt('What is my favorite team?').toLowerCase();
 console.log(myTeam);
 
 //Validate answer is correct
 if(myTeam === 'cubs') {
     alert('Correct, nice job, ' + userName);
-    userPoints += 1;
+    userPoints++;
     console.log('This is the users total points', userPoints);
 } else {
     alert('Sorry, incorrect');
@@ -45,7 +47,7 @@ console.log(mySport);
 
 if(mySport === 'baseball') {
     alert('Hey, that is correct!');
-    userPoints += 1;
+    userPoints++;
     console.log('This is the users total points', userPoints);
 } else {
     alert('That is not my favorite, but I like that too.');
@@ -58,7 +60,7 @@ console.log(mySeason);
 
 if(mySeason === 'summer') {
     alert('Yes! I love summer!');
-    userPoints += 1;
+    userPoints++;
     console.log('This is the users total points', userPoints);
 } else {
     alert('Nope. Not a fan.');
@@ -71,7 +73,7 @@ console.log(mySteak);
 
 if(mySteak === 'medium rare') {
     alert('Of course. Medium rare is the best!');
-    userPoints += 1;
+    userPoints++;
     console.log('This is the users total points', userPoints);
 } else {
     alert('Nope. Not a fan.');
@@ -84,7 +86,7 @@ console.log(myMusic);
 
 if(myMusic === 'rap') {
     alert('Yup! But i like country too.');
-    userPoints += 1;
+    userPoints++;
     console.log('This is the users total points', userPoints);
 } else {
     alert('Nope. But I like country music sometimes.');
@@ -92,18 +94,19 @@ if(myMusic === 'rap') {
 }
 //prompt our user for input data
 let entries = 6;
-while(entries > 0) {
+while(entries >= 1) {
     let userHolidays = prompt('What is one of my two favorite holidays?').toLowerCase();
     console.log(userHolidays);
 
     if(userHolidays === 'christmas' || userHolidays === 'thanksgiving') {
         alert('You guessed it! Nice job!');
-        userPoints += 1;
+        userPoints++;
         console.log('This is the users total points', userPoints);
         break;
     } else {
         alert('Nope. Not quite.');
         console.log('This is the users total points', userPoints);
+        entries--;
     }
 }
 
@@ -120,7 +123,7 @@ while(chances > 0) {
     if(userNumber === answer) {
         //Let the user know they are right
         alert('You got it!! You must be a mind reader!');
-        userPoints += 1;
+        userPoints++;
         //Set chances = 0
         break;
     } else {
@@ -136,10 +139,11 @@ while(chances > 0) {
             chances -= 1;
             console.log('This is the amount of user chances', chances);
         }
+        // This closes while loop
         
+
     }
- }//This closes while loop
-// if(chances = 0) {
-//     alert('Sorry you ran out of chances. The number was 5!');
-//     console.log('This is the amount of user chances', chances);
-// }
+ }
+ alert("Congratulations on finishing my quiz! Your total number of points is " + userPoints)
+}
+questions();
