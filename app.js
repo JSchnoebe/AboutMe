@@ -92,7 +92,7 @@ if(myMusic === 'rap') {
 }
 //prompt our user for input data
 let entries = 6;
-while(entries > 0)
+while(entries > 0) {
     let userHolidays = prompt('What is one of my two favorite holidays?').toLowerCase();
     console.log(userHolidays);
 
@@ -100,9 +100,11 @@ while(entries > 0)
         alert('You guessed it! Nice job!');
         userPoints += 1;
         console.log('This is the users total points', userPoints);
+        break;
     } else {
         alert('Nope. Not quite.');
         console.log('This is the users total points', userPoints);
+    }
 }
 
 let answer = 5;
