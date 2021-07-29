@@ -5,7 +5,7 @@ body {
     background-color: rgba(218, 226, 224, 0.5);
 }
 main {
-    background-color: rgb(211, 214, 205);
+    background-color: rgb(235, 230, 203);
 }
 header {
     margin-bottom: 10px;
@@ -13,7 +13,7 @@ header {
 ul li {
     display: inline;
     padding: 10px;
-    background-color: rgb(85,136,212);
+    background-color: rgb(230, 200, 120);
     border-radius: 15px;
 }
 #footerList li {
@@ -23,10 +23,10 @@ ul li {
     border-radius: 15px;
 }
 h1 {
-    background-color: rgb(44,94,141);
-    color: rgb(211, 214, 205);
+    background-color: rgb(235, 230, 203);
+    color: rgb(230, 200, 120);
     font-size: 50px;
-    text-shadow:2px 2px ivory;
+    text-shadow:2px 2px rgb(44,94,141);
     margin-bottom: 20px;
 }
 nav {
