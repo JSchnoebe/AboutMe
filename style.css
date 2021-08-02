@@ -8,7 +8,7 @@ main {
     background-color: rgb(235, 230, 203);
 }
 header {
-    margin-bottom: 10px;
+    height: 150px;
 }
 ul li {
     display: inline;
@@ -31,12 +31,34 @@ h1 {
 }
 nav {
     background-color: rgb(44,94,141);
-    height: 250px;
+    height: 100px;
 }
 footer {
     margin-top: 15px;
 }
 
 .MyTopTen {
-    color: rgb(179, 41, 41)
+    color: rgb(179, 41, 41);
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+}
+
+.indexPic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    height: 300px;
+    margin-top: 50px;
+    padding-top: 20px;
+    border-radius: 10px;
+    border-color: rgb(44,94,141);
+    border-style: inherit;
+}
+
+h2 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
 }
